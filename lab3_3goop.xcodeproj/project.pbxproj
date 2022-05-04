@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1EF4A9CC281EDE650085F45A /* Source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF4A9C7281ED2AB0085F45A /* Source.cpp */; };
-		1EF4A9CD281EDE670085F45A /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF4A9C4281ED2930085F45A /* Object.cpp */; };
-		1EF4A9CE281EDE6A0085F45A /* Money.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF4A9C1281ED2810085F45A /* Money.cpp */; };
-		1EF4A9CF281EDE6D0085F45A /* Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF4A9BE281ED2710085F45A /* Account.cpp */; };
+		1E417F4228217BBF000D807F /* catch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EF4A9C9281EDDA20085F45A /* catch.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -138,10 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EF4A9CE281EDE6A0085F45A /* Money.cpp in Sources */,
-				1EF4A9CF281EDE6D0085F45A /* Account.cpp in Sources */,
-				1EF4A9CD281EDE670085F45A /* Object.cpp in Sources */,
-				1EF4A9CC281EDE650085F45A /* Source.cpp in Sources */,
+				1E417F4228217BBF000D807F /* catch.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

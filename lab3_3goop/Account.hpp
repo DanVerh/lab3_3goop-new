@@ -5,22 +5,20 @@
 #include "Money.hpp"
 using namespace std;
 
-class Account {
+class Account:public Money {
 private:
     string name;
     int num;
     double perc;
-    Money sum;
 public:
     void SetName(string value) { name = value; }
     void SetNum(int value) { num = value; }
     void SetPerc(double value) { perc = value; }
-    void SetMoney(Money value) { sum = value; }
     string GetName() { return name; }
     int GetNum() { return num; }
     double GetPerc() { return perc; }
-    Money GetSum() { return sum; }
-    void Init(string name1, int num1, double perc1, Money sum1);
+    double GetSum() { return this->Sum(); }
+    void Init(string name1, int num1, double perc1);
     void Read();
     void Display();
 
@@ -38,3 +36,4 @@ public:
     Account operator ++(int);
     Account operator --(int);
 };
+

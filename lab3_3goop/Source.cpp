@@ -8,12 +8,12 @@
 using namespace std;
 
 int main() {
-    Money b(2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2);
-    cout << b;
-    Money c(2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
     Account a;
-    a.Init("john", 0001, 1.5, b);
-    a.Withdraw(c);
+    a.Init("john", 0101, 1.5);
+    a.Money::Init(2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    Money b(2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    a.Display();
+    a.Dollar();
     a.Display();
     cout << "count = " << Object::Count() << endl;
 

@@ -9,51 +9,50 @@
 
 using namespace std;
 
-void Account::Init(string name1, int num1, double perc1, Money sum1) {
+void Account::Init(string name1, int num1, double perc1) {
     name = name1;
     num = num1;
     perc = perc1;
-    sum = sum1;
 }
 
 void Account::Read() {
     cout << "name = "; cin >> name;
     cout << "number = "; cin >> num;
     cout << "percent = "; cin >> perc;
-    cout << "sum = "; cin >> sum;
 }
 
 void Account::Display() {
     cout << name << endl;
     cout << num << endl;
     cout << perc << endl;
-    cout << sum << endl;
+    cout << this->GetSum()<< endl;
+    cout << endl;
 }
 
 void Account::Withdraw(Money value) {
-    sum = sum - value;
+    *this - value;
 }
 
 void Account::TopUp(Money value) {
-    sum = sum + value;
+    *this + value;
 }
 
 void Account::Interest() {
-    sum = sum *= 0.01 * perc;
+    *this *= 0.01 * perc;
 }
 
 void Account::Dollar() {
-    sum = sum /= 32;
+    *this /= 32;
 }
 
 void Account::Euro() {
-    sum = sum /= 35;
+    *this /= 35;
 }
 
 string Account::toString() {
     string d;
     stringstream sout;
-    sout << sum.Sum() << endl;
+    sout << this->Sum() << endl;
     d = sout.str();
     d.replace(d.find("."), 1, ",");
     return d;
@@ -81,5 +80,7 @@ Account Account::operator --(int)
     this->perc--;
     return tmp;
 }
+
+
 
 
